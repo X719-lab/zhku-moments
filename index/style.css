@@ -1,0 +1,143 @@
+/* 全局设置 */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+    "PingFang SC",
+    "Microsoft YaHei",
+    sans-serif;
+
+    min-height:100vh;
+
+    padding:60px 8%;
+
+    color:#1f2937;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(255,230,210,0.9),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at bottom right,
+            rgba(210,230,255,0.8),
+            transparent 40%
+        ),
+
+        #faf8f5;
+}
+
+/* 标题区域 */
+
+.hero{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.hero h1{
+
+    font-size:56px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+.hero p{
+
+    color:#6b7280;
+
+    font-size:18px;
+}
+
+/* 瀑布流 */
+
+.gallery{
+
+    column-count:2;
+
+    column-gap:30px;
+}
+
+/* 卡片 */
+
+.card{
+
+    break-inside:avoid;
+
+    margin-bottom:30px;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,0.75);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    transition:all 0.35s ease;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,0.12);
+}/*悬停效果交互
+
+/* 图片 */
+
+.card img{
+
+    width:100%;
+    height:auto;
+    display:block;
+
+    transition:transform 0.6s ease;
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
+}
+
+/* 文字 */
+
+.content{
+
+    padding:22px;
+}
+
+.content h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+    color:#111827;
+}
+
+.content p{
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+    font-size:15px;
+}
